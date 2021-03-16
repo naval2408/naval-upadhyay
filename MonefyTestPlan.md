@@ -1,202 +1,203 @@
 # Monefy Application Test Plan (Android)
 
 
-# Functional Tests<space><space>
-**Test Case ID:** TFT001
-*Priority:* P1
-*Explore :* Initial Balance 
-*With :* Different types of accounts
-*To :* Validate initial balance is set to zero for a new user
+# Functional Tests
 
-**Test Case ID:** TFT002
-*Priority:* P1
-*Explore :* All Expense and Income categories 
-*With :* Different types of accounts
-*To :* Validate user is able to categorise the transactions correctly
+**Test Case ID:** TFT001<br/>
+*Priority:* P1<br/>
+*Explore :* Initial Balance<br/> 
+*With :* Different types of accounts<br/>
+*To :* Validate initial balance is set to zero for a new user<br/>
 
-**Test Case ID:** TFT003
-*Priority:* P1
-*Explore :* All possible intervals for Transaction Accounting
-*With :* Different time intervals
-*To :* Validate transactions are categorised correctly according to the time interval
+**Test Case ID:** TFT002<br/>
+*Priority:* P1<br/>
+*Explore :* All Expense and Income categories<br/> 
+*With :* Different types of accounts<br/>
+*To :* Validate user is able to categorise the transactions correctly<br/>
 
-**Test Case ID:** TFT004
-*Priority:* P1
-*Explore :* Updating a already recorded transaction
-*With :* Different categories and accounts
-*To :* Validate transactions are updated correctly
+**Test Case ID:** TFT003<br/>
+*Priority:* P1<br/>
+*Explore :* All possible intervals for Transaction Accounting<br/>
+*With :* Different time intervals<br/>
+*To :* Validate transactions are categorised correctly according to the time interval<br/>
 
- **Test Case ID:** TFT005
-*Priority:* P1
-*Explore :* Logic to compute the total balance
-*With :* Different input combinations for income and expense
-*To :* Validate that balance is always displayed correctly
+**Test Case ID:** TFT004<br/>
+*Priority:* P1<br/>
+*Explore :* Updating a already recorded transaction<br/>
+*With :* Different categories and accounts<br/>
+*To :* Validate transactions are updated correctly<br/>
 
- **Test Case ID:** TFT006
-*Priority:* P1
-*Explore :* All the general settings (Not pro)
-*With :* Valid and non-valid inputs for each setting
-*To :* Validate settings are applied correctly
+ **Test Case ID:** TFT005<br/>
+*Priority:* P1<br/>
+*Explore :* Logic to compute the total balance<br/>
+*With :* Different input combinations for income and expense<br/>
+*To :* Validate that balance is always displayed correctly<br/>
 
- **Test Case ID:** TFT007
-*Priority:* P1
-*Explore :* All the Pro settings 
-*With :* Pro and Non Pro users
-*To :* Validate only Pro users can access pro settings
+ **Test Case ID:** TFT006<br/>
+*Priority:* P1<br/>
+*Explore :* All the general settings (Not pro)<br/>
+*With :* Valid and non-valid inputs for each setting<br/>
+*To :* Validate settings are applied correctly<br/>
 
- **Test Case ID:** TFT008
-*Priority:* P1
-*Explore :* Upgradation to Pro users 
-*With :* Different payment types
-*To :* Validate that user upgradation is successful
+ **Test Case ID:** TFT007<br/>
+*Priority:* P1<br/>
+*Explore :* All the Pro settings<br/> 
+*With :* Pro and Non Pro users<br/>
+*To :* Validate only Pro users can access pro settings<br/>
 
- **Test Case ID:** TFT009
-*Priority:* P1
-*Explore :* Downgrading from Pro user
-*To :* Validate that user can cancel the Pro account
+ **Test Case ID:** TFT008<br/>
+*Priority:* P1<br/>
+*Explore :* Upgradation to Pro users<br/> 
+*With :* Different payment types<br/>
+*To :* Validate that user upgradation is successful<br/>
 
-**Test Case ID:** TFT010
-*Priority:* P1
-*Explore :* Calculator module being used while recording transactions 
-*With :* Different combination of inputs and operations
-*To :* Validate the Arithmetic correctness of mathematical operations
+ **Test Case ID:** TFT009<br/>
+*Priority:* P1<br/>
+*Explore :* Downgrading from Pro user<br/>
+*To :* Validate that user can cancel the Pro account<br/>
 
-**Test Case ID:** TFT011
-*Priority:* P1
-*Explore :* Backup and Restore 
-*With :* Different balances in different accounts
-*To :* Validate the Data Persistence
+**Test Case ID:** TFT010<br/>
+*Priority:* P1<br/>
+*Explore :* Calculator module being used while recording transactions<br/> 
+*With :* Different combination of inputs and operations<br/>
+*To :* Validate the Arithmetic correctness of mathematical operations<br/>
 
-**Test Case ID:** TFT012
-*Priority:* P1
-*Explore :* Transfer Amount
-*With :* Different types of accounts
-*To :* Validate that given amount is transferred across different accounts
+**Test Case ID:** TFT011<br/>
+*Priority:* P1<br/>
+*Explore :* Backup and Restore<br/> 
+*With :* Different balances in different accounts<br/>
+*To :* Validate the Data Persistence<br/>
 
-**Test Case ID:** TFT013
-*Priority:* P2
-*Explore :* Sorting the transactions 
-*With :* Time and Value
-*To :* Sorting logic across different account types and transaction categories
+**Test Case ID:** TFT012<br/>
+*Priority:* P1<br/>
+*Explore :* Transfer Amount<br/>
+*With :* Different types of accounts<br/>
+*To :* Validate that given amount is transferred across different accounts<br/>
 
-**Test Case ID:** TFT013
-*Priority:* P2
-*Explore :* Search functionality 
-*With :* Valid and Invalid transactions
-*To :* Validate the Searching logic
+**Test Case ID:** TFT013<br/>
+*Priority:* P2<br/>
+*Explore :* Sorting the transactions<br/>
+*With :* Time and Value<br/>
+*To :* Sorting logic across different account types and transaction categories<br/>
+
+**Test Case ID:** TFT013<br/>
+*Priority:* P2<br/>
+*Explore :* Search functionality<br/>
+*With :* Valid and Invalid transactions<br/>
+*To :* Validate the Searching logic<br/>
 
 
 # Non Functional Tests
 
-**Test Case ID:** TNFT001
-*Priority:* P2
-*Explore :* Boundary value analysis
-*With :* All the input fields
-*To :* Validate the Maximum and Minimum
+**Test Case ID:** TNFT001<br/>
+*Priority:* P2<br/>
+*Explore :* Boundary value analysis<br/>
+*With :* All the input fields<br/>
+*To :* Validate the Maximum and Minimum<br/>
 
-**Test Case ID:** TNFT002
-*Priority:* P1
-*Explore :* Boundary value analysis
-*With :* Number of Accounts and Transactions
-*To :* Validate the Maximum and Minimum number of Accounts and Transactions
+**Test Case ID:** TNFT002<br/>
+*Priority:* P1<br/>
+*Explore :* Boundary value analysis<br/>
+*With :* Number of Accounts and Transactions<br/>
+*To :* Validate the Maximum and Minimum number of Accounts and Transactions<br/>
 
-**Test Case ID:** TNFT003
-*Priority:* P1
-*Explore :* Application in landscape orientation
-*To :* Validate that UI is not broken in the landscape orientation
+**Test Case ID:** TNFT003<br/>
+*Priority:* P1<br/>
+*Explore :* Application in landscape orientation<br/>
+*To :* Validate that UI is not broken in the landscape orientation<br/>
 
-**Test Case ID:** TNFT004
-*Priority:* P1
-*Explore :* Login with the same user (google play ID)
-*With :* With a different android device
-*To :* Validate mutual exclusion of transactions in different devices
+**Test Case ID:** TNFT004<br/>
+*Priority:* P1<br/>
+*Explore :* Login with the same user (google play ID)<br/>
+*With :* With a different android device<br/>
+*To :* Validate mutual exclusion of transactions in different devices<br/>
 
 
-**Test Case ID:** TNFT005
-*Priority:* P1
-*Explore :* Operate the application 
-*With :* With Battery Saver mode on
-*To :* Observe the application behaviour in resource crunch situation
+**Test Case ID:** TNFT005<br/>
+*Priority:* P1<br/>
+*Explore :* Operate the application<br/>
+*With :* With Battery Saver mode on<br/>
+*To :* Observe the application behaviour in resource crunch situation<br/>
 
-**Test Case ID:** TNFT006
-*Priority:* P1
-*Explore :* Operate the application 
-*With :* Not giving all the permissions to the application
-*To :* Validate the handling of missing permissions
+**Test Case ID:** TNFT006<br/>
+*Priority:* P1<br/>
+*Explore :* Operate the application<br/> 
+*With :* Not giving all the permissions to the application<br/>
+*To :* Validate the handling of missing permissions<br/>
 
-**Test Case ID:** TNFT007
-*Priority:* P3
-*Explore :* Operate the application 
-*With :* Device having low secondary storage
-*To :* Observe the application behaviour in resource crunch situation
+**Test Case ID:** TNFT007<br/>
+*Priority:* P3<br/>
+*Explore :* Operate the application <br/>
+*With :* Device having low secondary storage<br/>
+*To :* Observe the application behaviour in resource crunch situation<br/>
 
-**Test Case ID:** TNFT008
-*Priority:* P2
-*Explore :* Battery consumption while using the Application
-*With :* Battery Historian tool 
-*To :* Check application is not draining the battery
+**Test Case ID:** TNFT008<br/>
+*Priority:* P2<br/>
+*Explore :* Battery consumption while using the Application<br/>
+*With :* Battery Historian tool<br/>
+*To :* Check application is not draining the battery<br/>
 
-**Test Case ID:** TNFT009
-*Priority:* P1
-*Explore :* Force Swiping and Force Killing application
-*To :* Validate data persistence
+**Test Case ID:** TNFT009<br/>
+*Priority:* P1<br/>
+*Explore :* Force Swiping and Force Killing application<br/>
+*To :* Validate data persistence<br/>
 
-**Test Case ID:** TNFT010
-*Priority:* P1
-*Explore :* Network Usage
-*With :* Android Network Monitor
-*To :* Check application is consuming excessive bandwidth
+**Test Case ID:** TNFT010<br/>
+*Priority:* P1<br/>
+*Explore :* Network Usage<br/>
+*With :* Android Network Monitor<br/>
+*To :* Check application is consuming excessive bandwidth<br/>
 
 # Performance Tests
 
-**Test Case ID:** TNPT001
-*Priority:* P1
-*Explore :* Memory leaks and Memory Consumption
-*With :* Memory analyzer tool
-*To :* Check there are no memory leaks in application
+**Test Case ID:** TNPT001<br/>
+*Priority:* P1<br/>
+*Explore :* Memory leaks and Memory Consumption<br/>
+*With :* Memory analyzer tool<br/>
+*To :* Check there are no memory leaks in application<br/>
 
 **Test Case ID:** TNPT002
-*Priority:* P1
-*Explore :* Application opening and loading
-*With :* Application benchmarking
-*To :* Check there is no delay in Application opening and loading
+*Priority:* P1<br/>
+*Explore :* Application opening and loading<br/>
+*With :* Application benchmarking<br/>
+*To :* Check there is no delay in Application opening and loading<br/>
 
 **Test Case ID:** TNPT003
-*Priority:* P2
-*Explore :* UI performance
-*With :* Lots of data inside the application
-*To :* Validate the actual user experience
+*Priority:* P2<br/>
+*Explore :* UI performance<br/>
+*With :* Lots of data inside the application<br/>
+*To :* Validate the actual user experience<br/>
 
 # Device and OS Coverage
 
-**Test Case ID:** TNDC001
-*Priority:* P1
-*Explore :* Different screen sizes
-*To :* Validate look and feel of application
+**Test Case ID:** TNDC001<br/>
+*Priority:* P1<br/>
+*Explore :* Different screen sizes<br/>
+*To :* Validate look and feel of application<br/>
 
 **Test Case ID:** TNDC002
-*Priority:* P1
-*Explore :* Supported operating sizes
-*To :* Ensure that application runs on spectrum of supported operating systems.
+*Priority:* P1<br/>
+*Explore :* Supported operating sizes<br/>
+*To :* Ensure that application runs on spectrum of supported operating systems<br/>
 
 # Upgrade Testing
 
-**Test Case ID:** TNUT001
-*Priority:* P1
-*Explore :* Application Upgrade
-*With :* All possible previous version
-*To :* No crashes and data loss after upgrading to latest version
+**Test Case ID:** TNUT001<br/>
+*Priority:* P1<br/>
+*Explore :* Application Upgrade<br/>
+*With :* All possible previous version<br/>
+*To :* No crashes and data loss after upgrading to latest version<br/>
 
 
 
 ## Prioritisation and Order of Execution
-Navigate to the sections sequentially and within section each test case has it's priority.
+Navigate to the sections sequentially and within section each test case has it's priority.<br/>
 
 ## Time in Man Hours
-Functional Tests : 5 hours
-Non Functional Tests : 4 hours
-Performance Tests : 3 hours
-Device and OS Coverage, Upgrade Testing : 3 hours
+Functional Tests : 5 hours<br/>
+Non Functional Tests : 4 hours<br/>
+Performance Tests : 3 hours<br/>
+Device and OS Coverage, Upgrade Testing : 3 hours<br/>
 Total : 15 man hours.
 
 
