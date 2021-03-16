@@ -20,3 +20,4 @@ After the run, a HTML report is generated in the target folder at path :
  - Code is modular and configuration driven.
  - JUnit is used as test runner as it can be easily integrated with Cucumber.
  - HTML reporting is implemented using maven-cucumber-reporting plugin.
+ - Request/Responses are logged in logs.txt file.
