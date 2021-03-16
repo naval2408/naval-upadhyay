@@ -1,0 +1,1141 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-15T22:21:58.317Z",
+        "line": 17,
+        "name": "Verify a user is being added using CreateUserAPI",
+        "description": "",
+        "id": "validating-crud-operation-for-user;verify-a-user-is-being-added-using-createuserapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2081583591,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Create user payload with \"10\" \"testUserName\" \"testFirstName\" \"testLastName\" \"test@email.com\" \"testPassword\" \"12345678\" \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"testUserName\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"testFirstName\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"testLastName\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"test@email.com\"",
+                  "offset": 76
+                },
+                {
+                  "val": "\"testPassword\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"12345678\"",
+                  "offset": 108
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 119
+                }
+              ],
+              "location": "UserStepDefination.create_user_payload_with(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2972579589,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Call \"USER_RESOURCE\" with \"POST\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"USER_RESOURCE\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 26
+                }
+              ],
+              "location": "UserStepDefination.call_with_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2750530,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "UserStepDefination.api_call_is_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000842615,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"id\" in response body is \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 25
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16445805,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"username\" in response body is \"testUserName\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testUserName\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33903668,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"firstName\" in response body is \"testFirstName\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firstName\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testFirstName\"",
+                  "offset": 32
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49991961,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "\"lastName\" in response body is \"testLastName\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"lastName\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testLastName\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15038355,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"email\" in response body is \"test@email.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"test@email.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24490961,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "\"password\" in response body is \"testPassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testPassword\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17705761,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "\"phone\" in response body is \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"phone\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"12345678\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41568993,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "\"userStatus\" in response body is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userStatus\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-15T22:22:04.613Z",
+        "line": 20,
+        "name": "Get the user details using GetUserAPI",
+        "description": "",
+        "id": "validating-crud-operation-for-user;get-the-user-details-using-getuserapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20666401,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "\"testUserName\" is the path parameter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testUserName\"",
+                  "offset": 0
+                }
+              ],
+              "location": "UserStepDefination.is_the_path_parameter(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179295602,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Call \"USER_RESOURCE\" with \"GET\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"USER_RESOURCE\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 26
+                }
+              ],
+              "location": "UserStepDefination.call_with_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77212,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "UserStepDefination.api_call_is_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 76469893,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "\"id\" in response body is \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 25
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27455430,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "\"username\" in response body is \"testUserName\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testUserName\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19040342,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "\"firstName\" in response body is \"testFirstName\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firstName\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testFirstName\"",
+                  "offset": 32
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15416155,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "\"lastName\" in response body is \"testLastName\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"lastName\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testLastName\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29498016,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "\"email\" in response body is \"test@email.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"test@email.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15214878,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "\"password\" in response body is \"testPassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testPassword\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12808438,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "\"phone\" in response body is \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"phone\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"12345678\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16897073,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "\"userStatus\" in response body is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userStatus\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-15T22:22:05.047Z",
+        "line": 49,
+        "name": "Verify a user is being updated using UpdateUserAPI",
+        "description": "",
+        "id": "validating-crud-operation-for-user;verify-a-user-is-being-updated-using-updateuserapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5274348,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Create user payload with \"10\" \"testUserNameUpdated\" \"testFirstNameUpdated\" \"testLastNameUpdated\" \"testUpdated@email.com\" \"testPasswordUpdated\" \"12345678\" \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"testUserNameUpdated\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"testFirstNameUpdated\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"testLastNameUpdated\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"testUpdated@email.com\"",
+                  "offset": 97
+                },
+                {
+                  "val": "\"testPasswordUpdated\"",
+                  "offset": 121
+                },
+                {
+                  "val": "\"12345678\"",
+                  "offset": 143
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 154
+                }
+              ],
+              "location": "UserStepDefination.create_user_payload_with(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4703623,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "\"testUserName\" is the path parameter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testUserName\"",
+                  "offset": 0
+                }
+              ],
+              "location": "UserStepDefination.is_the_path_parameter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116423968,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Call \"USER_RESOURCE\" with \"PUT\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"USER_RESOURCE\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"PUT\"",
+                  "offset": 26
+                }
+              ],
+              "location": "UserStepDefination.call_with_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68882,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "UserStepDefination.api_call_is_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23703337,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "\"id\" in response body is \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 25
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19924798,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "\"username\" in response body is \"testUserNameUpdated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testUserNameUpdated\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26537175,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "\"firstName\" in response body is \"testFirstNameUpdated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firstName\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testFirstNameUpdated\"",
+                  "offset": 32
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18198688,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "\"lastName\" in response body is \"testLastNameUpdated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"lastName\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testLastNameUpdated\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12941225,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "\"email\" in response body is \"testUpdated@email.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testUpdated@email.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15431439,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "\"password\" in response body is \"testPasswordUpdated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testPasswordUpdated\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15626550,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "\"phone\" in response body is \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"phone\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"12345678\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8289044,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "\"userStatus\" in response body is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userStatus\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UpdateUser"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-15T22:22:05.322Z",
+        "line": 51,
+        "name": "Get the user details using GetUserAPI",
+        "description": "",
+        "id": "validating-crud-operation-for-user;get-the-user-details-using-getuserapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4311630,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "\"testUserNameUpdated\" is the path parameter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testUserNameUpdated\"",
+                  "offset": 0
+                }
+              ],
+              "location": "UserStepDefination.is_the_path_parameter(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62808473,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Call \"USER_RESOURCE\" with \"GET\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"USER_RESOURCE\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 26
+                }
+              ],
+              "location": "UserStepDefination.call_with_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 188281,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "UserStepDefination.api_call_is_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11349551,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "\"id\" in response body is \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"10\"",
+                  "offset": 25
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13043633,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "\"username\" in response body is \"testUserNameUpdated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testUserNameUpdated\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13678054,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "\"firstName\" in response body is \"testFirstNameUpdated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firstName\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testFirstNameUpdated\"",
+                  "offset": 32
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11698216,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "\"lastName\" in response body is \"testLastNameUpdated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"lastName\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testLastNameUpdated\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25091369,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "\"email\" in response body is \"testUpdated@email.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testUpdated@email.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8809224,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "\"password\" in response body is \"testPasswordUpdated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"testPasswordUpdated\"",
+                  "offset": 31
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7892180,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "\"phone\" in response body is \"12345678\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"phone\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"12345678\"",
+                  "offset": 28
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7237083,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "\"userStatus\" in response body is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userStatus\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "UserStepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-15T22:22:05.497Z",
+        "line": 64,
+        "name": "Delete the created user using DeleteUserAPI",
+        "description": "",
+        "id": "validating-crud-operation-for-user;delete-the-created-user-using-deleteuserapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3625533,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "\"testUserName\" is the path parameter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testUserName\"",
+                  "offset": 0
+                }
+              ],
+              "location": "UserStepDefination.is_the_path_parameter(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 160617006,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "Call \"USER_RESOURCE\" with \"DELETE\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"USER_RESOURCE\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 26
+                }
+              ],
+              "location": "UserStepDefination.call_with_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83059,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "UserStepDefination.api_call_is_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating CRUD operation for User",
+    "description": "",
+    "id": "validating-crud-operation-for-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/crudTests.feature",
+    "tags": []
+  }
+]
